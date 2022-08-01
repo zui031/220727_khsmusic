@@ -1,2 +1,56 @@
-@import "reset.scss";
-@import"normalize.scss";
+@import"_var.scss";//引入變數
+@import"_normalize.scss";
+@import "_reset.scss";
+@import"_nav.scss";
+
+//-----------
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+//------------
+
+body{
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;//vh=視窗高
+    // background-color: skyblue;
+    background-image: url(../img/bg/bg-32.png);
+    background-repeat: no-repeat;//避免空間太大，圖片自動延伸拼接
+    background-size: 100%;//cover差異
+    background-position: center;
+    position: relative;
+    z-index: 1;
+
+    //漸層
+    &::before{
+        content: "";
+        display: block;//偽元素預設是文字(inline)，需要改成塊集block
+        background: linear-gradient(180deg, rgb(165, 82, 82) 0%, rgba(255,255,255,0) 100%);
+        width: 100%;
+        height: 50%;
+        position: absolute;//把漸層的結構脫離出來
+        z-index: -1;
+    }
+    //黑底
+    &::after{
+        content: "";
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        opacity: 0.2;
+    }
+}
