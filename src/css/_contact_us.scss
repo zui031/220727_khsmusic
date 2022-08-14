@@ -1,0 +1,44 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form{
+    background-color: skyblue;
+    width: 980px;
+    height: 100%;
+    margin:0 auto;
+}
+//上面的文字
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    :first-child{
+        color: white;
+    }
+    :last-child{
+        color: red;
+    }
+}
+//表單區
+.write_space{
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+.personal{
+    
+}
+
+input{
+    border: none;
+    margin-bottom:5px ;
+    
+    &:focus{
+        outline: 1px solid red;
+    }
+}

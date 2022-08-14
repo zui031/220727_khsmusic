@@ -2,6 +2,7 @@
 @import"_normalize.scss";
 @import "_reset.scss";
 @import"_nav.scss";
+@import"_contact_us";
 
 //-----------
 html {
@@ -52,5 +53,50 @@ header{
         top: 0;
         left: 0;
         opacity: 0.2;
+    }
+    .header_infor{
+        display: none;
+    }
+}
+
+// 服務項目
+.service{
+    display: flex;
+    justify-content: space-around;
+    background-color:#d01a48;
+    padding:40px 0;
+}
+.serv_area{
+    width: 600px;
+    // background-color: burlywood;
+    .img{
+        width: 100%
+    }
+    .bottom{
+        display: flex;
+        padding: 20px;
+        .illust{
+            width: 200px;
+            margin-right: 20px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                line-height: 25px;
+            }
+            
+        }
+    }
+    .more{
+        margin-top: 50px;
+        color: white;
+        text-align: right;
     }
 }

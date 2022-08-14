@@ -10,15 +10,74 @@
 </head>
 <body>
     <header>
-        <!-- @@include('include/nav.html') -->
-        <h1>全心灌溉熱愛音樂的幼苗</h1>
-        <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
-    </header>
+        @@include('include/nav.html')
+        <div class="header_infor">
+            <h1>全心灌溉熱愛音樂的幼苗</h1>
+            <p>功學社取自「貢獻」、「學校」、「社會」，我們希望用優質的樂器與熱誠的音樂教育，將藝術的種子散布在台灣各處，同時走向國際名揚台灣精神。</p>
+        
+        </div>
+       </header>
+
+
     <div>
         <p>fzdgxhcjv</p>
+
+        <!-- 表單(點文字也能勾到) -->
+        <input id="a" type="checkbox">
+        <label for="a">A</label>
+
+        <input id="b" type="checkbox">
+        <label for="b">B</label>
+        <br>
+        <input id="c" type="radio" name="choise">
+        <label for="c">C</label>
+
+        <input id="d" type="radio" name="choise">
+        <label for="d">D</label>
     </div>
+
+    <!-- Me -->
+    <!-- 服務項目 -->
+    <div class="service">
+        <!-- 左 -->
+        <div class="serv_area" style="background-color: #cc9650;">
+            
+            <img class="img" src="img/bg/bg-33.png">
+
+            <div class="bottom">
+                <img class="illust" src="img/obj1.png">
+
+                <div class="text">
+                    <h2>產品介紹</h2><br>
+                    <p>鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。</p>
+                </div>
+            </div>
+            <p class="more">了解更多</p>
+
+        </div>
+        <!-- 右 -->
+        <div class="serv_area" style="background-color:#73bf00;">
+            
+            <img class="img" src="img/bg/bg-34.png">
+
+            <div class="bottom">
+                <img class="illust" src="img/obj2.png">
+
+                <div class="text">
+                    <h2>音樂教育</h2><br>
+                    <p>鋼琴、電子琴、各種管樂器、弦樂器、打擊樂器及數位樂器之銷售及維修服務。</p>
+                </div>
+            </div>
+            <p class="more">了解更多</p>
+
+        </div>
+    </div>
+
     
-    
+    <!-- 表單 -->
+    <div>
+        @@include('include/contact_us.html')
+    </div>
     
 
 </body>
